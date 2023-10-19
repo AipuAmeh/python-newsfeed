@@ -13,9 +13,8 @@ class Post(Base):
   created_at = Column(DateTime, default=datetime.now)
   updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
   vote_count = column_property(select(func.count(Vote.id)).where(Vote.post_id == id))
-
-user = relationship('User')
+  user = relationship('User')
 # deleting all posts also deletes all associated comments
-comments = relationship('Comment', cascade='all,delete')
+  comments = relationship('Comment', cascade='all,delete')
 # deleting all posts also deletes all associated votes
-votes = relationship('Vote', cascade='all,delete')
+  votes = relationship('Vote', cascade='all,delete')

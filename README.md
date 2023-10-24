@@ -7,11 +7,11 @@ NewsFeed is a refactored tech blog that uses python for its backend technology i
 ## Installation
 
 The technologies used in this app are:
-* recent version of Python
-* SQLAlchemy database
-* Flask
-* Jinja Templates
-* Procfile
+- Python3
+- SQLAlchemy database
+- Flask
+- Jinja Templates
+- Procfile
 
 ## Usage
 

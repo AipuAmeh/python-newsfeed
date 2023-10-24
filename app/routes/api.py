@@ -7,7 +7,6 @@ from app.utils.auth import login_required
 bp = Blueprint('api', __name__, url_prefix='/api')
 
 @bp.route('/users', methods=['POST'])
-@login_required
 def signup():
   data = request.get_json()
   db = get_db()
@@ -33,7 +32,6 @@ def signup():
   return jsonify(id = newUser.id)
 
 @bp.route('/users/login', methods=['POST'])
-@login_required
 def login():
   data = request.get_json()
   db = get_db()

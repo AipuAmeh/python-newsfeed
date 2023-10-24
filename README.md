@@ -15,7 +15,7 @@ The technologies used in this app are:
 
 ## Usage
 
-(Click the link to view Just Tech News deployed on Heroku:)[https://justtechnews-b92ea65cc5f0.herokuapp.com/]
+([Click the link to view Just Tech News deployed on Heroku:https://justtechnews-b92ea65cc5f0.herokuapp.com/])
 
 ## Credits
 
